@@ -1,3 +1,7 @@
+:root {
+    --light-blue: #7dd3fc;
+}
+
 .container {
     display: grid;
     grid-template-columns: 20% 50% 30%;
@@ -108,7 +112,8 @@ span #name {
 
 .main-content {
     display: grid;
-    grid-template-columns: 50% 50%;
+    /*grid-template-columns: 50% 50%;*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     margin-left: 10px;
@@ -237,4 +242,9 @@ span #name {
 .trending-div,
 .trending-h3 {
     margin-left: 200px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-blue);
 }
